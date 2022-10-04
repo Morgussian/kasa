@@ -1,16 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//nouveau react 18
+import {createRoot} from 'react-dom/client';
+
 import {BrowserRouter as Router} from 'react-router-dom';
-import '../src/components/styles/index.css';
+import './components/styles/index.css';
 import App from './App';
 
+//nouveau react 18
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
 
-
-ReactDOM.render(
+root.render(
   <Router>
     <App />
-  </Router>,
-  document.getElementById('root')
+  </Router>
 );
 
 

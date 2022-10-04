@@ -4,6 +4,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './screens/Home';
 import About from './screens/About';
+import FicheLogement from './screens/FicheLogement';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
     <Routes>
       
             
+      
       <Route path = '/' element = {<Home/>}/>
+      <Route path = '/:id' element = {<FicheLogement/>}/>
       <Route path = '/about' element = {<About/>}/>
       
       
