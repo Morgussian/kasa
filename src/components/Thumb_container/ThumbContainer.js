@@ -1,10 +1,18 @@
 import React from 'react';
 import logements from '../../data/logements.json'
-import Thumb from '../Thumb/Thumb';
 
+
+function json2array(json){
+    var result = [];
+    var keys = Object.keys(json);
+    keys.forEach(function(key){
+        result.push(json[key]);
+    });
+    return result;
+}
 
 const ThumbContainer = () => {
-    const cribList = JSON.stringify(logements)
+    const cribList = json2array(logements)
     
     const titleList = cribList.map((crib) =>
         <li key={crib.id}>
@@ -17,7 +25,6 @@ const ThumbContainer = () => {
     return (
         <div className='container'>
             {titleList}
-            <Thumb/>
         </div>
     );
     
