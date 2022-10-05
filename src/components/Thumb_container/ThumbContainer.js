@@ -1,30 +1,21 @@
 import React from 'react';
 import logements from '../../data/logements.json'
-
-
-function json2array(json){
-    var result = [];
-    var keys = Object.keys(json);
-    keys.forEach(function(key){
-        result.push(json[key]);
-    });
-    return result;
-}
+import Thumb from '../Thumb/Thumb';
 
 const ThumbContainer = () => {
-    const cribList = json2array(logements)
     
-    const titleList = cribList.map((crib) =>
+    const titleList = logements.map((crib) =>
         <li key={crib.id}>
-            <div>
-                <img src ={crib.cover} alt='cover'></img>
-                <h3>{crib.title}</h3>
-            </div>
+            
+            {/* les props c'est ce dont Thumb va se servir */}
+            <Thumb cover = {crib.cover} title = {crib.title} id = {crib.id}/>
         </li>
     )
     return (
         <div className='container'>
-            {titleList}
+            <ul>
+                {titleList}
+            </ul>
         </div>
     );
     

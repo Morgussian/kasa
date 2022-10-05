@@ -1,11 +1,16 @@
 import React from 'react';
 import './Thumb.css'
+import { Link } from 'react-router-dom'
 
-const Thumb = (id, title, imgUrl) => {
+//(props) c'est toutes les propriétés qu'on passe à l'appel de thumb (voir ThumbContainer)
+const Thumb = (props) => {
     return (
-        <div className='thumb'>
-            <p>{title}</p>
-        </div>
+        <Link to = '/props.id'>
+            <div>
+                <img src ={props.cover} alt='cover'></img>
+                <h3>{props.title}</h3>
+            </div>
+        </Link>
     );
 };
 
