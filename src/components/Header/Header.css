@@ -1,0 +1,15 @@
+header, nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+nav{
+    width: 10%;
+}
+
+header{
+    padding-bottom: 0;
+    height: 180px;
+}

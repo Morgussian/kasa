@@ -1,5 +1,6 @@
 import React from 'react';
 import logements from '../../data/logements.json'
+import './Thumb_container.css'
 import Thumb from '../Thumb/Thumb';
 
 const ThumbContainer = () => {

@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import '../../components/styles/index.css'
+import './fichelogement.css'
 import { useParams } from 'react-router-dom';
 
 

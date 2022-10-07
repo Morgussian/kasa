@@ -1,13 +1,33 @@
+
 body {
-  margin: 0;
+  margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 1420px;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* utilisation de variables css: couleur */
+:root {
+  --primary-color: #FF6060;
+  --text-background: #E5E5E5;
+  --white: #ffffff;
+}
+
+/*Comment changer la couleur des liens?*/
+:any-link {
+  --color: #FF6060;
+}
+
+p{
+  font-size: 24px;
 }

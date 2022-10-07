@@ -1,0 +1,17 @@
+body {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.Err404 h1 {
+    font-size: 180px;
+}
+
+.Err404 p {
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+
+Link {
+
+}

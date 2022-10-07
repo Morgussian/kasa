@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';
-import Large from '../../components/Drawer/Large';
 import './About.css'
+import Drawer from '../../components/Drawer/Drawer';
 
 const About = () => {
     return (
@@ -12,10 +12,12 @@ const About = () => {
             <Header/>
             <Banner/>
             <div className = 'about--display'>
-                <Large title = 'Fiabilité' text = {fiabilite} isOpen = 'true'/>
-                <Large title = 'Respect' text = {respect} isOpen = 'true'/>
-                <Large title = 'Service' text = {service} isOpen = 'true'/>
-                <Large title = 'Sécurité' text = {securite} isOpen = 'true'/>
+
+                {/* rien à faire, le drawer est toujours ouvert quel que soit le state!!! */}
+                <Drawer title = 'Fiabilité' content = {fiabilite} state = '0'/>
+                <Drawer title = 'Respect' content = {respect} state = '0'/>
+                <Drawer title = 'Service' content = {service} state = '0'/>
+                <Drawer title = 'Sécurité' content = {securite} state = '1'/>
             </div>
             <Footer/>
         </div>
