@@ -8,7 +8,7 @@ const Drawer = (props) => {
 
     //state: déclarer une constante qui est un array. une prop d'état à useState qui, suivant les pages, peut être ouvert...
     const [isOpen, setIsOpen] = useState(props.state)
-    console.log(props.state)
+    
     return isOpen ? (
         <div className='drawer'>
             <button onClick={() => setIsOpen(0)}>{props.title}</button>
