@@ -7,7 +7,7 @@ import Header from '../../components/Header/Header';
 
 const Err404 = () => {
     return (
-        <div>
+        <section className='err404'>
             <Header/>
             <section className='Err404'>
                 <h1>404</h1>
@@ -15,7 +15,7 @@ const Err404 = () => {
                 <Link to = '/'>Retour à la page d'accueil</Link>
             </section>
             <Footer/>
-        </div>
+        </section>
     );
 };
 

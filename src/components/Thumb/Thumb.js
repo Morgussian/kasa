@@ -8,7 +8,7 @@ const Thumb = (props) => {
     
     return (
         <Link to = {`/Fiche_Logement/${props.id}`}>
-            <div>
+            <div className='thumb'>
                 <img src ={props.cover} alt='cover'></img>
                 <h3>{props.title}</h3>
             </div>

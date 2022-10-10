@@ -36,7 +36,7 @@ const FicheLogement = () => {
     return (
         <section className='fiche_logement'>
             <Header/>
-            <Carousel cover = {cribFind.cover} pictures= {cribFind.pictures}/>
+            <Carousel pictures= {cribFind.pictures}/>
             <FicheLogementContents title = {cribFind.title} location = {cribFind.location} hostName = {hostName} hostPicture = {hostPicture} rating = {cribFind.rating} tags = {cribFind.tags}/>
             <div className='drawerContainer'>
                 <Drawer title = 'Description' content = {cribFind.description} state = '0'/>

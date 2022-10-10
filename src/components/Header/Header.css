@@ -2,14 +2,23 @@ header, nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
 nav{
     width: 10%;
 }
-
+header .link {
+    color: var(--primary-color);
+    text-decoration: none;
+    
+}
+header .link:hover{
+    text-decoration: underline;
+}
 header{
-    padding-bottom: 0;
-    height: 180px;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    width: var(--body-width);
+    margin: auto;
+    
 }

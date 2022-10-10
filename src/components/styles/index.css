@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 1420px;
+  
   
 }
 
@@ -21,6 +21,7 @@ code {
   --primary-color: #FF6060;
   --text-background: #E5E5E5;
   --white: #ffffff;
+  --body-width: 1240px;
 }
 
 /*Comment changer la couleur des liens?*/

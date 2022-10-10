@@ -5,15 +5,16 @@ import Header from '../../components/Header/Header';
 import ThumbContainer from '../../components/Thumb_container/ThumbContainer';
 import '../../components/styles/index.css'
 import './home.css'
+import homeBannerImg from '../../assets/images/background.png'
 
 const Home = () => {
     return (
-        <div>
+        <section className='home'>
             <Header/>
-            <Banner/>
+            <Banner img = {homeBannerImg} text = 'Chez vous, partout et ailleurs'/>
             <ThumbContainer/>
             <Footer/>
-        </div>
+        </section>
     );
 };
 

@@ -1,0 +1,25 @@
+.thumb{
+    width: 270px;
+    height: 270px;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+    
+    background: var(--primary-color);
+    
+    
+}
+.thumb h3{
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: medium;
+    
+}
+.thumb img{
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}

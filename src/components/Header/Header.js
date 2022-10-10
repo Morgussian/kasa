@@ -8,8 +8,8 @@ export default function Header(){
         <header className='header'> 
             <img src={logo} alt = 'logo'></img>
             <nav>
-                <Link to = '/'>Accueil</Link>
-                <Link to = '/about'>A Propos</Link>
+                <Link to = '/' className='link'>Accueil</Link>
+                <Link to = '/about' className='link'>A Propos</Link>
             </nav>
         </header> 
     )

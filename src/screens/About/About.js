@@ -4,13 +4,14 @@ import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';
 import './About.css'
 import Drawer from '../../components/Drawer/Drawer';
+import aboutBannerImg from '../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
 
 const About = () => {
     return (
         
-        <div className = 'about'>
+        <section className = 'about'>
             <Header/>
-            <Banner/>
+            <Banner img = {aboutBannerImg}/>
             <div className = 'about--display'>
 
                 {/* rien à faire, le drawer est toujours ouvert quel que soit le state!!! */}
@@ -20,7 +21,7 @@ const About = () => {
                 <Drawer title = 'Sécurité' content = {securite} state = '1'/>
             </div>
             <Footer/>
-        </div>
+        </section>
     );
 };
 

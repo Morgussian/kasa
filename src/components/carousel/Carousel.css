@@ -1,15 +1,20 @@
 .carousel{
+    height: 300px;
     width: 100%;
     position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    object-fit: fill;
+
 }
 .arrows{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*border: 1px black solid;*/
+    /* border: 1px black solid; */
     position: absolute;
-    width: 80%;
-    left: 10%;
+    width: 60%;
+    left: 20%;
     top: 44%;
 
 }

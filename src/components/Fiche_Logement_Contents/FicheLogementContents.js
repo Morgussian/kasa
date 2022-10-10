@@ -3,25 +3,20 @@ import RatingStars from '../RatingStars/RatingStars'
 import './FicheLogementContents.css'
 
 const FicheLogementContents = (props) => {
-    const tags = props.tags
-    
-    function tagDisplay()  {
-        tags.forEach((tag) => {
-            <li>{tag}</li>
-            }
-        )
-    }
-    
+       
+       
     return (
         <div className='crib_contents'>
             <div className='left'>
                 <h1>{props.title}</h1>
                 <p>{props.location}</p>
-
-                {/* ca marche pas */}
-                <ul className='tags'>
-                    {tagDisplay}
-                </ul>
+                <div className='tagContainer'>
+                    <ul className='tags'>
+                        {props.tags.map((tag, index) => (
+                            <li key={index} className = 'tag'> {tag} </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
             <div className='right'>
                 <div className='host'>
@@ -35,7 +30,7 @@ const FicheLogementContents = (props) => {
                 <div className='rating'>
                     <div className='starsContainer'>
                         <RatingStars rating = {props.rating}/>
-                        <span className="star">&#9733;</span>
+                        {/* <span className="star">&#9733;</span> */}
                     </div>
                                   
                 </div>

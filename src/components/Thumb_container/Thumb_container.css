@@ -1,0 +1,19 @@
+.thumbContainer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+.thumbContainer li{
+    list-style-type: none;
+    margin-bottom: 30px;
+    
+}
+.thumbContainer{
+    background: var(--text-background);
+    border-radius: 20px;
+    width: var(--body-width);
+    margin: auto;
+}

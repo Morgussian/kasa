@@ -1,6 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 //Voici les quatre pages du site:

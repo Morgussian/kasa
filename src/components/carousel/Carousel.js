@@ -8,13 +8,16 @@ const Carousel = (props) => {
     const [currentImg, setCurrentImg] = useState(0)
     const carouselLength = props.pictures.length;
 
+    //ascendant: si l'index de l'image actuelle est le dernier du array =  changer l'index à 0, sinon +1
     const nextImg = () => {
         setCurrentImg( currentImg === carouselLength -1 ? 0 : currentImg +1 )
     }
+
+    //descendant: si l'index de l'image actuelle est le premier du array =  changer l'index au dernier, sinon -1
     const previousImg = () => {
         setCurrentImg( currentImg === 0 ? carouselLength -1 : currentImg - 1 )
     }
-    console.log(currentImg)
+    
     //si pas d'images ou tableau vide envoyé en props:
     if(!Array.isArray(props.pictures) || carouselLength === 0)
         return null

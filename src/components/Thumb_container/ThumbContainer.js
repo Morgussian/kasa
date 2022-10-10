@@ -13,7 +13,7 @@ const ThumbContainer = () => {
         </li>
     )
     return (
-        <div className='container'>
+        <div className='thumbContainer'>
             <ul>
                 {titleList}
             </ul>

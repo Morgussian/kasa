@@ -1,13 +1,20 @@
-.banner{
+.banner {
     position: relative;
-    background: url('../../assets/images/background.png') center/cover;
-    width: auto;
-    height: 200px;
+    margin: auto;
+    width: var(--body-width);
+    height: 223px;
     text-align: center;
+    
 }
-
+.banner img{
+    border-radius: 20px;
+    filter: brightness(70%);
+}
 .banner h2{
     position: absolute;
-    margin-top: 10%;
-    color: black;
+    top: 23%;
+    color: white;
+    font-size: 40px;
+    left: 28%;
+    
 }
