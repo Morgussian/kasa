@@ -16,7 +16,6 @@ import FicheLogementContents from '../../components/Fiche_Logement_Contents/Fich
 import Drawer from '../../components/Drawer/Drawer';
 
 
-
 const FicheLogement = () => {
 
     //destructuration: une variable entre accolades ne donne que la valeur et pas l'objet {cid}  = clé + valeur
@@ -27,15 +26,20 @@ const FicheLogement = () => {
         crib.id === cid
     );
     
-        
+    //Décomposer l'objet host. Apparemment un objet ne peut pas être passé en prop...
+    const hostName = cribFind.host.name
+    const hostPicture = cribFind.host.picture
+    
     return (
         <div>
             <Header/>
-            <h1>Fiche Logement</h1>
             <Carousel cover = {cribFind.cover} pictures= {cribFind.pictures}/>
-            <FicheLogementContents title = {cribFind.title} host = {cribFind.host} location = {cribFind.location} rating = {cribFind.rating} tags = {cribFind.tags}/>
-            <Drawer title = 'Description' content = {cribFind.description} state = '0'/>
-            <Drawer title = 'Equipement' content = {cribFind.equipments} state = '0'/>
+            <FicheLogementContents title = {cribFind.title} location = {cribFind.location} hostName = {hostName} hostPicture = {hostPicture} rating = {cribFind.rating} tags = {cribFind.tags}/>
+            <div className='drawerContainer'>
+                <Drawer title = 'Description' content = {cribFind.description} state = '0'/>
+                <Drawer title = 'Equipement' content = {cribFind.equipments} state = '0'/>
+            </div>
+            
             <Footer/>
         </div>
     );

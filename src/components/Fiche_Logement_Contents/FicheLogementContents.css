@@ -1,0 +1,19 @@
+.crib_contents{
+    display: flex;
+    flex-direction: row;
+}
+.left, .right {
+    width: 50%;
+}
+.host{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.hostPicture img{
+    border-radius: 50%;
+    
+}
+.rating{
+    justify-content: end;
+}
