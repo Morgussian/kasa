@@ -14,6 +14,7 @@ import Header from '../../components/Header/Header';
 import Carousel from '../../components/carousel/Carousel';
 import FicheLogementContents from '../../components/Fiche_Logement_Contents/FicheLogementContents';
 import Drawer from '../../components/Drawer/Drawer';
+import Err404 from '../404/Err404';
 
 
 const FicheLogement = () => {
@@ -25,13 +26,15 @@ const FicheLogement = () => {
     const cribFind = logements.find((crib) => 
         crib.id === cid
     );
-    
+
+    if( cribFind ){
+
     //Décomposer l'objet host. Apparemment un objet ne peut pas être passé en prop...
     const hostName = cribFind.host.name
     const hostPicture = cribFind.host.picture
-    
+        
     return (
-        <div>
+        <section className='fiche_logement'>
             <Header/>
             <Carousel cover = {cribFind.cover} pictures= {cribFind.pictures}/>
             <FicheLogementContents title = {cribFind.title} location = {cribFind.location} hostName = {hostName} hostPicture = {hostPicture} rating = {cribFind.rating} tags = {cribFind.tags}/>
@@ -41,8 +44,12 @@ const FicheLogement = () => {
             </div>
             
             <Footer/>
-        </div>
-    );
+        </section>
+    )}
+    
+    //si cribFind undefined:
+    return <Err404/>;
+    
 };
 
 export default FicheLogement;

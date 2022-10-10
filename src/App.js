@@ -16,7 +16,7 @@ function App() {
             
       
       <Route path = '/' element = {<Home/>}/>
-      <Route path = '/404' element = {<Err404/>}/>
+      <Route path = '*' element = {<Err404/>}/>
       <Route path = '/Fiche_Logement/:cid' element = {<FicheLogement/>}/>
       <Route path = '/about' element = {<About/>}/>
       

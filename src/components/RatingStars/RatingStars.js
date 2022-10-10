@@ -12,7 +12,7 @@ const RatingStars = (props) => {
     const changeGradeIndex = () => {
         setGradeIndex( props.rating );
     }
-    console.log(props.rating)
+    
     return (
         <div className="container">
             <h1 className="result">{ GRADES[gradeIndex] ? GRADES[gradeIndex] : 'You didn\'t review yet'}</h1>
