@@ -1,0 +1,7 @@
+.drawerContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: var(--body-width);
+    margin: auto;
+}

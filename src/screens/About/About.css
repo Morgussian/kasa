@@ -1,6 +1,7 @@
 .about--display{
     display: flex;
     flex-direction: column;
-    
-    
+    max-width: var(--body-width);
+    margin: auto;
+    margin-top: 20px;
 }

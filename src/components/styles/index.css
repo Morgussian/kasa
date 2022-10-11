@@ -1,4 +1,3 @@
-
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,7 +8,9 @@ body {
   
   
 }
-
+p{
+  font-size: 24px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -20,7 +21,7 @@ code {
 :root {
   --primary-color: #FF6060;
   --text-background: #E5E5E5;
-  --white: #ffffff;
+  --text-size: 18px;
   --body-width: 1240px;
 }
 
@@ -29,6 +30,3 @@ code {
   --color: #FF6060;
 }
 
-p{
-  font-size: 24px;
-}

@@ -1,9 +1,22 @@
-
-
 button{
     background-color: var(--primary-color);
+    color: white;
 }
 .drawer{
-    background: #E5E5E5;
+    flex: 1;
+    background: var(--text-background);
+    font-size: var(--text-size);
+    padding: 12px;
+}
+li{
     color: var(--primary-color);
+    list-style-type: none;
+}
+.drawer ul {
+    text-align: left;
+
+}
+.drawer p {
+    font-size: var(--text-size);
+    text-align: left;
 }

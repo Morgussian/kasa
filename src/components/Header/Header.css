@@ -17,8 +17,8 @@ header .link:hover{
 }
 header{
     padding-bottom: 3%;
-    margin-top: 2%;
     width: var(--body-width);
     margin: auto;
+    margin-top: 20px;
     
 }

@@ -7,7 +7,13 @@ import rightArrow from '../../assets/images/Vectorright.png'
 const Carousel = (props) => {
     const [currentImg, setCurrentImg] = useState(0)
     const carouselLength = props.pictures.length;
+    console.log(currentImg)
 
+    const displayImgNumber = () => {
+        let num1 = currentImg + 1
+        return num1 + '/' + carouselLength;  
+    }
+        
     //ascendant: si l'index de l'image actuelle est le dernier du array =  changer l'index à 0, sinon +1
     const nextImg = () => {
         setCurrentImg( currentImg === carouselLength -1 ? 0 : currentImg +1 )
@@ -26,24 +32,22 @@ const Carousel = (props) => {
         <section className='carousel'>
             <div className='arrows'>
                 <div className='vectorLeft'>
-                    <img src = {leftArrow} alt='flèche gauche' onClick={nextImg}></img>
+                    <img src = {leftArrow} alt='flèche gauche' onClick={previousImg}></img>
                 </div>
+                
                 <div className='vectorRight'>
-                    <img src = {rightArrow} alt='flèche droite' onClick={previousImg}></img>
+                    <img src = {rightArrow} alt='flèche droite' onClick={nextImg}></img>
                 </div>
             </div>
             {props.pictures.map((picture, index) => {
                 return(
                 <div className = {index === currentImg ? 'active' : 'inactive'} key = {index}>
-                    {index === currentImg && (<img src = {picture} alt = "un appartement">
-                    
-                    </img>)}
-                    
-                    
+                    {index === currentImg && (<img src = {picture} alt = "un appartement"></img>)}
+                    <p>{displayImgNumber()}</p>   
                 </div>)
             })}
-            {/* on peut mettre un array en props */}
-            
+            {/* on peut mettre un array en props, pas un objet */}
+              
         </section>
     );
 };

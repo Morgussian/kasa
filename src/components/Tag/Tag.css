@@ -1,0 +1,13 @@
+.tagContainer ul {
+    display: flex;
+    flex-direction: row;
+}
+.tag{
+    background: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
