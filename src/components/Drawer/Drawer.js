@@ -1,7 +1,8 @@
-
 import React,{ useState } from 'react';
 import '../styles/index.css';
 import './Drawer.css';
+import ArrowUp from '../../assets/images/arrow_up.png'
+import ArrowDown from '../../assets/images/arrow_down.png'
 
 //Drawer (Collapse?) prend trois props: title de la barre, content et isOpen
 const Drawer = (props) => {
@@ -31,13 +32,26 @@ const Drawer = (props) => {
         )
         
     } 
+    console.log(isOpen)
     return isOpen ? (
-        <div className='drawer'>
-            <button onClick={() => setIsOpen(0)}>{props.title}</button>
-                {drawerContentDisplay()}   
-        </div>
+        <article className='drawer'>
+            <div className='drawer--header'>
+                <span>{props.title}</span>
+                <div className='drawer--header--arrow'>
+                    <img src = {ArrowUp} alt = 'flèche haut' onClick={() => setIsOpen(0)}></img>
+                </div>
+            </div>
+            {drawerContentDisplay()}   
+        </article>
     ) : (
-        <button onClick={() => setIsOpen(1)}>{props.title}</button>
+        <article className='drawer'>
+            <div className='drawer--header'>
+                <span>{props.title}</span>
+                <div className='drawer--header--arrow'>
+                    <img src = {ArrowDown} alt = 'flèche bas' onClick={() => setIsOpen(1)}></img>
+                </div>
+            </div>
+        </article>
     )
 }
 

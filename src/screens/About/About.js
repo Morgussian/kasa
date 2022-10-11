@@ -18,7 +18,7 @@ const About = () => {
                 <Drawer title = 'Fiabilité' content = {fiabilite} state = '0'/>
                 <Drawer title = 'Respect' content = {respect} state = '0'/>
                 <Drawer title = 'Service' content = {service} state = '0'/>
-                <Drawer title = 'Sécurité' content = {securite} state = '1'/>
+                <Drawer title = 'Sécurité' content = {securite} state = '0'/>
             </div>
             <Footer/>
         </section>

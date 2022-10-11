@@ -7,8 +7,8 @@ import rightArrow from '../../assets/images/Vectorright.png'
 const Carousel = (props) => {
     const [currentImg, setCurrentImg] = useState(0)
     const carouselLength = props.pictures.length;
-    console.log(currentImg)
-
+    
+    //afficher un compteur de photos
     const displayImgNumber = () => {
         let num1 = currentImg + 1
         return num1 + '/' + carouselLength;  
@@ -34,7 +34,6 @@ const Carousel = (props) => {
                 <div className='vectorLeft'>
                     <img src = {leftArrow} alt='flèche gauche' onClick={previousImg}></img>
                 </div>
-                
                 <div className='vectorRight'>
                     <img src = {rightArrow} alt='flèche droite' onClick={nextImg}></img>
                 </div>

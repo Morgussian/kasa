@@ -1,24 +1,23 @@
+header{
+    padding-bottom: 3%;
+    max-width: var(--body-width);
+    margin: auto;
+    margin-top: 20px;
+    
+}
 header, nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 nav{
-    width: 10%;
+    width: 20%;
 }
 header .link {
     color: var(--primary-color);
     text-decoration: none;
-    
+    font-size: 24px;
 }
 header .link:hover{
     text-decoration: underline;
-}
-header{
-    padding-bottom: 3%;
-    width: var(--body-width);
-    margin: auto;
-    margin-top: 20px;
-    
 }

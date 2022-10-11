@@ -1,14 +1,15 @@
 .banner {
     position: relative;
     margin: auto;
-    width: var(--body-width);
+    max-width: var(--body-width);
     height: 223px;
     text-align: center;
-    
+    object-fit: contain;
 }
 .banner img{
     border-radius: 20px;
     filter: brightness(70%);
+    
 }
 .banner h2{
     position: absolute;

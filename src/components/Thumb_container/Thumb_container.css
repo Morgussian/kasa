@@ -14,6 +14,6 @@
 .thumbContainer{
     background: var(--text-background);
     border-radius: 20px;
-    width: var(--body-width);
+    max-width: var(--body-width);
     margin: auto;
 }

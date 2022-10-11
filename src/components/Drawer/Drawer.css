@@ -1,22 +1,36 @@
-button{
-    background-color: var(--primary-color);
-    color: white;
-}
 .drawer{
     flex: 1;
+    position: relative;
+    font-size: var(--text-size);
+    width: 100%;
+    margin-top: 31px;
+}
+.drawer--header{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--text-size);
+}
+.drawer--header img{
+    cursor: pointer;
+}
+.drawer p, .drawer ul {
+    position: relative;
+    top: -25px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: var(--text-size);
+    text-align: left;
     background: var(--text-background);
-    font-size: var(--text-size);
-    padding: 12px;
-}
-li{
-    color: var(--primary-color);
-    list-style-type: none;
-}
-.drawer ul {
-    text-align: left;
-
-}
-.drawer p {
-    font-size: var(--text-size);
-    text-align: left;
+    border-radius: 0 0 10px 10px;
+    z-index: -3;
 }
