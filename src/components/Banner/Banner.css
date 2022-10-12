@@ -4,18 +4,20 @@
     max-width: var(--body-width);
     height: 223px;
     text-align: center;
-    object-fit: contain;
-}
-.banner img{
-    border-radius: 20px;
     filter: brightness(70%);
-    
 }
-.banner h2{
-    position: absolute;
-    top: 23%;
+.banner--container h2{
+    position: relative;
+    z-index: 1;
+    top: 170px;
     color: white;
     font-size: 40px;
-    left: 28%;
     
+    
+}
+@media only screen and (max-width: 576px){
+    .banner--container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

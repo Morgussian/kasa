@@ -39,8 +39,8 @@ const FicheLogement = () => {
             <Carousel pictures= {cribFind.pictures}/>
             <FicheLogementContents title = {cribFind.title} location = {cribFind.location} hostName = {hostName} hostPicture = {hostPicture} rating = {cribFind.rating} tags = {cribFind.tags}/>
             <div className='drawerContainer'>
-                <Drawer title = 'Description' content = {cribFind.description} state = '0'/>
-                <Drawer title = 'Equipement' content = {cribFind.equipments} state = '0'/>
+                <Drawer title = 'Description' content = {cribFind.description} state = {true}/>
+                <Drawer title = 'Equipement' content = {cribFind.equipments} state = {true}/>
             </div>
             
             <Footer/>

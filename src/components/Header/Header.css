@@ -3,21 +3,42 @@ header{
     max-width: var(--body-width);
     margin: auto;
     margin-top: 20px;
-    
+    align-items: center;
 }
 header, nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* border: 1px black solid; */
 }
 nav{
-    width: 20%;
+    width: 250px;
 }
 header .link {
     color: var(--primary-color);
     text-decoration: none;
+    
     font-size: 24px;
 }
 header .link:hover{
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px){
+nav{
+    width: 40%;
+}
+}
+@media only screen and (max-width: 576px){
+    header{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    nav{
+        width: 100px;
+        
+    }
+    header .link{
+        font-size: var(--mobile-text-size);
+    }
 }

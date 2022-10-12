@@ -25,3 +25,9 @@
 .rating{
     justify-content: end;
 }
+@media only screen and (max-width: 576px){
+    .crib_contents{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

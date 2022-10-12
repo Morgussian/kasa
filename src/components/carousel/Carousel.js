@@ -37,12 +37,13 @@ const Carousel = (props) => {
                 <div className='vectorRight'>
                     <img src = {rightArrow} alt='flèche droite' onClick={nextImg}></img>
                 </div>
+                <p>{displayImgNumber()}</p>
             </div>
             {props.pictures.map((picture, index) => {
                 return(
                 <div className = {index === currentImg ? 'active' : 'inactive'} key = {index}>
                     {index === currentImg && (<img src = {picture} alt = "un appartement"></img>)}
-                    <p>{displayImgNumber()}</p>   
+                       
                 </div>)
             })}
             {/* on peut mettre un array en props, pas un objet */}

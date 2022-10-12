@@ -32,13 +32,12 @@ const Drawer = (props) => {
         )
         
     } 
-    console.log(isOpen)
     return isOpen ? (
         <article className='drawer'>
             <div className='drawer--header'>
                 <span>{props.title}</span>
                 <div className='drawer--header--arrow'>
-                    <img src = {ArrowUp} alt = 'flèche haut' onClick={() => setIsOpen(0)}></img>
+                    <img src = {ArrowUp} alt = 'flèche haut' onClick={() => setIsOpen(false)}></img>
                 </div>
             </div>
             {drawerContentDisplay()}   
@@ -48,7 +47,7 @@ const Drawer = (props) => {
             <div className='drawer--header'>
                 <span>{props.title}</span>
                 <div className='drawer--header--arrow'>
-                    <img src = {ArrowDown} alt = 'flèche bas' onClick={() => setIsOpen(1)}></img>
+                    <img src = {ArrowDown} alt = 'flèche bas' onClick={() => setIsOpen(true)}></img>
                 </div>
             </div>
         </article>

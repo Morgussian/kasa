@@ -1,11 +1,13 @@
 .carousel{
-    height: 415px;
-    width: 100%;
     position: relative;
+    height: 415px;
+    max-width: var(--body-width);
+    margin: auto;
     margin-bottom: 30px;
     overflow: hidden;
     object-fit: fill;
-
+    border-radius: 25px;
+    
 }
 .arrows{
     display: flex;
@@ -16,17 +18,27 @@
     margin: auto;
     left: 20%;
     top: 44%;
-
+    border: 1px black solid;
 }
 .vectorLeft, .vectorRight {
     cursor: pointer;
 }
-
+.active {
+    
+    
+    border-radius: 25px;
+}
 .carousel p {
     position: absolute;
     color: white;
     left: 49%;
-    bottom: 25px;
+    bottom: -140px;
     /* border: 1px black solid; */
     
+}
+@media only screen and (max-width: 576px){
+    .carousel{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

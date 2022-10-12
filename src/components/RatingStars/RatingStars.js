@@ -1,32 +1,33 @@
-import React, { useState } from 'react';
-import Star from '../Star/Star';
+import React from 'react';
+import EmptyStar from '../../assets/images/empty-star.png'
+import FilledStar from '../../assets/images/filled-star.png'
 
 const RatingStars = (props) => {
-    const [gradeIndex, setGradeIndex] = useState(props.rating);
-    const GRADES = [1, 2, 3, 4, 5];
-    const activeStar = {
-        fill: 'var(--primary-color)'
-    };
+    
+    const numberOfStars = 5;
+   
     
     
-    const changeGradeIndex = () => {
-        setGradeIndex( props.rating );
+   
+    const displayStars = () => {
+        let starArray = []
+        for(let i = 1; i <= numberOfStars; i++){
+            starArray.push(
+                <img src= {i > props.rating ? EmptyStar : FilledStar} alt = 'etoile' ></img>
+                
+            )          
+        } 
+        return starArray
     }
-    console.log(props.rating)
     return (
         <div className="container">
-            <h1 className="result">{ GRADES[gradeIndex] ? GRADES[gradeIndex] : 'You didn\'t review yet'}</h1>
+            {/* <h1 className="result">{ GRADES[gradeIndex] ? GRADES[gradeIndex] : 'You didn\'t review yet'}</h1> */}
             <div className="stars">
                 {
-                    GRADES.map((grade, index) => (
-                        
-                        <Star 
-                            index={index} 
-                            key={grade} 
-                            changeGradeIndex={changeGradeIndex}
-                            style={ gradeIndex > index ? activeStar : {}}
-                        />
-                    ))
+                    
+                      
+                displayStars()        
+                    
                 }
             </div>
         </div>

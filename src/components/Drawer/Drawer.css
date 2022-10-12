@@ -34,3 +34,9 @@
     border-radius: 0 0 10px 10px;
     z-index: -3;
 }
+@media only screen and (max-width: 576px){
+    .drawer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
