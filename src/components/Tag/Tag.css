@@ -1,8 +1,12 @@
 .tagContainer ul {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    padding-left: 0;
 }
 .tag{
+    height: 25px;
     background: var(--primary-color);
     border-radius: 10px;
     color: white;

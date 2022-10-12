@@ -1,14 +1,31 @@
-body {
+.Err404 {
+    max-width: var(--max-body-width);
+    margin: auto;
     color: var(--primary-color);
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .Err404 h1 {
-    font-size: 180px;
+    font-size: 288px;
+    margin-top: 100px;
+    margin-bottom: 66px;
 }
 
 .Err404 p {
-    font-size: 30px;
-    margin-bottom: 200px;
+    font-size: 36px;
+    margin-bottom: 150px;
+}
+.Err404 .link{
+    
+    color: var(--primary-color);
 }
 
+@media only screen and (max-width: 768px){
+    .Err404 h1{
+        font-size: 96px;
+    }
+    .Err404 p{
+        font-size: 18px;
+    }
+}

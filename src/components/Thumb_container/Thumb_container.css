@@ -20,7 +20,7 @@
     
 
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 1280px){
     .thumbContainer{
         margin-left: 20px;
         margin-right: 20px;

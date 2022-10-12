@@ -3,31 +3,68 @@
     flex-direction: row;
     max-width: var(--body-width);
     margin: auto;
+    margin-top: 20px;
 }
 .left, .right {
-    border: 1px black solid;
-    width: 50%;
+    flex: 1;
 }
 .left {
     position: relative;
-    border: 1px black solid;
+    
     text-align: left;
+}
+.left h1{
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+}
+.left p{
+    margin: 0;
 }
 .host{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    /* border: 1px solid black; */
+}
+.hostName{
+    border: 1px solid black;
+    width: 60px;
 }
 .hostPicture img{
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    
 }
 .rating{
-    justify-content: end;
+    text-align: end;
+    
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 1280px){
     .crib_contents{
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .crib_contents{
+        flex-direction: column;
+    }
+    .right{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+@media only screen and (max-width: 425px){
+    .left h1{
+        font-size: 18px;
+    }
+    .left p{
+        font-size: 14px;
     }
 }

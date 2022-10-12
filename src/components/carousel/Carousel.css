@@ -3,30 +3,26 @@
     height: 415px;
     max-width: var(--body-width);
     margin: auto;
-    margin-bottom: 30px;
     overflow: hidden;
-    object-fit: fill;
+    
     border-radius: 25px;
+    border: 1px black solid;
     
 }
 .arrows{
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
-    width: 60%;
-    margin: auto;
-    left: 20%;
-    top: 44%;
+    width: 99%;
+    
+    /* left: 20%; */
+    top: 40%;
     border: 1px black solid;
 }
 .vectorLeft, .vectorRight {
     cursor: pointer;
-}
-.active {
-    
-    
-    border-radius: 25px;
 }
 .carousel p {
     position: absolute;
@@ -36,7 +32,12 @@
     /* border: 1px black solid; */
     
 }
-@media only screen and (max-width: 576px){
+.active {
+    height: 100%;
+    width: 100%;
+    /* margin-top: -100px; */
+}
+@media only screen and (max-width: 1280px){
     .carousel{
         margin-left: 20px;
         margin-right: 20px;

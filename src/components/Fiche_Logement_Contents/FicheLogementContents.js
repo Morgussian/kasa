@@ -27,7 +27,6 @@ const FicheLogementContents = (props) => {
                         <RatingStars rating = {props.rating}/>
                         {/* <span className="star">&#9733;</span> */}
                     </div>
-                                  
                 </div>
             </div>
             

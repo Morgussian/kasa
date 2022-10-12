@@ -1,24 +1,12 @@
 body {
   margin: auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Monserrat', 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Monserrat', 'Segoe UI', 'Roboto', 'Oxygen', -apple-system, BlinkMacSystemFont, 
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
 }
-li{
-  list-style-type: none;
-}
-p{
-  font-size: 24px;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
 /* utilisation de variables css: couleur */
 :root {
   --primary-color: #FF6060;
@@ -27,6 +15,21 @@ code {
   --mobile-text-size: 12px;
   --body-width: 1240px;
 }
+li{
+  list-style-type: none;
+  color: var(--primary-color);
+}
+p{
+  font-size: 24px;
+  color: var(--primary-color);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
 
 /*Comment changer la couleur des liens?*/
 :any-link {
