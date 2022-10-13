@@ -3,8 +3,17 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 20px;
+    /* border: 1px solid black; */
     max-width: var(--body-width);
     margin: auto;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1280px){
+    .drawerContainer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media only screen and (max-width: 768px){

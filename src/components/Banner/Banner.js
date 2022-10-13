@@ -7,10 +7,10 @@ const Banner = (props) => {
     
     return (
         <div className='banner--container'>
-            <h2>{props.text}</h2>
+            <h1>{props.text}</h1>
             <div style={{background : `url(${props.img})`, 
             borderRadius: 20
-            }} className = 'banner'>
+            }} className = 'banner--img'>
             {/* <div style={[Style.banner, {backgroundImage : `url(${props.img})`}]}> */}
                 {/* <img src= {props.img} alt= 'banniere'></img> */}
      

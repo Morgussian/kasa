@@ -4,22 +4,18 @@
     max-width: var(--body-width);
     margin: auto;
     overflow: hidden;
-    
     border-radius: 25px;
-    border: 1px black solid;
-    
 }
 .arrows{
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 70%;
     position: absolute;
-    width: 99%;
-    
-    /* left: 20%; */
+    width: 100%;
     top: 40%;
-    border: 1px black solid;
+    
 }
 .vectorLeft, .vectorRight {
     cursor: pointer;
@@ -27,19 +23,58 @@
 .carousel p {
     position: absolute;
     color: white;
-    left: 49%;
+    margin: auto;
     bottom: -140px;
+
     /* border: 1px black solid; */
     
 }
 .active {
+    position: absolute;
+    bottom: -20px;
+}
+.active img {
     height: 100%;
     width: 100%;
-    /* margin-top: -100px; */
+    object-fit: contain;
+    
+    
+    
 }
 @media only screen and (max-width: 1280px){
     .carousel{
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .active{
+        height: auto;
+    }
+    .active img {
+        width: auto;
+        height: 430px;
+        object-fit: none;
+    }
+}
+@media only screen and (max-width: 440px){
+    .carousel{
+        height: 255px;
+    }
+    .carousel p {
+        bottom: 0px;
+    }
+    .active img {
+        width: auto;
+        height: 270px;
+        object-fit: contain;
+        
+    }
+    .vectorLeft img, .vectorRight img{
+        height: 20px;
+        width: auto;
+    }
+    .arrows {
+        top: 45%;
     }
 }

@@ -20,7 +20,7 @@ const About = () => {
             <div className = 'about--display'>
                 <Drawer title = 'Fiabilité' content = {fiabilite} state = {false}/>
                 <Drawer title = 'Respect' content = {respect} state = {false}/>
-                <Drawer title = 'Service' content = {service} state = {false}/>
+                <Drawer title = 'Service' content = {service} state = {true}/>
                 <Drawer title = 'Sécurité' content = {securite} state = {false}/>
             </div>
             <Footer/>

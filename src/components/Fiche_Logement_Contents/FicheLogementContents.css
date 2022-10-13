@@ -30,7 +30,7 @@
     /* border: 1px solid black; */
 }
 .hostName{
-    border: 1px solid black;
+   
     width: 60px;
 }
 .hostPicture img{
@@ -38,8 +38,12 @@
     height: 64px;
     border-radius: 50%;
 }
+.right{
+    position: relative;
+}
 .rating{
-    text-align: end;
+    position: absolute;
+    right: 0;
     
 }
 @media only screen and (max-width: 1280px){
@@ -57,14 +61,28 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
+        
+    }
+    .rating {
+        left: 0;
     }
 
 }
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 440px){
     .left h1{
         font-size: 18px;
     }
     .left p{
         font-size: 14px;
+    }
+    .hostPicture img {
+        width: 32px;
+        height: 32px;
+    }
+    .hostName{
+        margin-right: -50px;
+        font-size: 12px;
+        width: 40%;
+        /* border: 1px solid black; */
     }
 }

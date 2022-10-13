@@ -1,0 +1,21 @@
+.stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    /* border: 1px solid black; */
+}
+.stars img{
+    width: auto;
+    height: 30px;
+    
+    
+}
+@media only screen and (max-width: 440px){
+    .stars {
+        width: 120px;
+    }
+    .stars img {
+        height: 15px;
+    }
+}

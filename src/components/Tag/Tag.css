@@ -1,4 +1,4 @@
-.tagContainer ul {
+.tags {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -6,11 +6,23 @@
     padding-left: 0;
 }
 .tag{
-    height: 25px;
+    height: 20px;
     background: var(--primary-color);
     border-radius: 10px;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+@media only screen and (max-width: 440px){
+    .tag{
+        font-size: 10px;
+        height: 18px;
+        padding-top: 5px;
+        
+    }
 }
