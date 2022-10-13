@@ -1,4 +1,15 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient la logique d'affichage de la page à propos
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
+
+//import des composants et de la feuille de style
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';

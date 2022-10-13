@@ -1,4 +1,15 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient la logique d'affichage d'un logement
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
+
+//useParams utilise un ID envoyé par l'URL
 import { useParams } from 'react-router-dom';
 
 //imports de style
@@ -27,9 +38,10 @@ const FicheLogement = () => {
         crib.id === cid
     );
 
+    //cribFind est un booléen: L'ID de l'URL est il contenu dans logements?
     if( cribFind ){
 
-    //Décomposer l'objet host. Apparemment un objet ne peut pas être passé en prop...
+    //Décomposer l'objet host. un objet ne peut pas être passé en prop...
     const hostName = cribFind.host.name
     const hostPicture = cribFind.host.picture
         
@@ -38,6 +50,8 @@ const FicheLogement = () => {
             <Header/>
             <Carousel pictures= {cribFind.pictures}/>
             <FicheLogementContents title = {cribFind.title} location = {cribFind.location} hostName = {hostName} hostPicture = {hostPicture} rating = {cribFind.rating} tags = {cribFind.tags}/>
+
+            {/* cette div permettra de gérer la disposition des drawers sur la page */}
             <div className='drawerContainer'>
                 <Drawer title = 'Description' content = {cribFind.description} state = {true}/>
                 <Drawer title = 'Equipement' content = {cribFind.equipments} state = {true}/>
@@ -47,7 +61,7 @@ const FicheLogement = () => {
         </section>
     )}
     
-    //si cribFind undefined:
+    //si cribFind false:
     return <Err404/>;
     
 };

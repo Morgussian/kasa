@@ -1,16 +1,29 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient la logique d'affichage des étoiles du rating
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
-import EmptyStar from '../../assets/images/empty-star.png'
-import FilledStar from '../../assets/images/filled-star.png'
 import './RatingStars.css'
 
+//deux étoiles: une grise et une rouge
+import EmptyStar from '../../assets/images/empty-star.png'
+import FilledStar from '../../assets/images/filled-star.png'
+
+//Rating stars récupère un nombre d'étoiles de 1 à cinq
 const RatingStars = (props) => {
     
+    //nombre d'étoiles à afficher
     const numberOfStars = 5;
        
     const displayStars = () => {
         let starArray = []
         
-        //Iteration de 1 à 5. si I est supérieur au rating: étoile "vide", sinon étoile "remplie"
+        //Iteration de 1 à 5. si I est inférieur au rating: étoile "remplie", sinon étoile "vide"
         for(let i = 1; i <= numberOfStars; i++){
             starArray.push(
                 

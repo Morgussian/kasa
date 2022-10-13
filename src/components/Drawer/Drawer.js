@@ -1,6 +1,16 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient la logique du carousel
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React,{ useState } from 'react';
-import '../styles/index.css';
 import './Drawer.css';
+
+//Flêches de navigation
 import ArrowUp from '../../assets/images/arrow_up.png'
 import ArrowDown from '../../assets/images/arrow_down.png'
 
@@ -17,7 +27,8 @@ const Drawer = (props) => {
     //faire une map si content est un array
     const drawerContentDisplay = () => {
         if (isAnArray){
-            
+
+            //Pour le drawer qui affiche les équipements
             return (
                 <ul>{content.map((item, index) => 
                     <li key={index} className = 'item'>
@@ -27,12 +38,16 @@ const Drawer = (props) => {
                 </ul>
             )
         }
+
+        //Pour le drawer qui affiche du texte
         return (
             <p>{content}</p>
         )
         
     } 
     return isOpen ? (
+
+        //si le drawer est ouvert
         <article className='drawer'>
             <div className='drawer--header'>
                 <span>{props.title}</span>
@@ -43,6 +58,8 @@ const Drawer = (props) => {
             {drawerContentDisplay()}   
         </article>
     ) : (
+
+        //si le drawer est fermé
         <article className='drawer'>
             <div className='drawer--header'>
                 <span>{props.title}</span>

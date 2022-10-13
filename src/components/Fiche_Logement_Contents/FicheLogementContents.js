@@ -1,8 +1,18 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient les infos du logement: localisation, propriétaire, tags, rating
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
 import RatingStars from '../RatingStars/RatingStars'
 import Tag from '../Tag/Tag';
 import './FicheLogementContents.css'
 
+//Les props contiennent: un titre, une localisation, le nom du propriétaire, les [tags], le rating
 const FicheLogementContents = (props) => {
     const tags = props.tags   
        

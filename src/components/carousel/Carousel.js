@@ -1,17 +1,27 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient la logique du carousel
+*
+* 
+* @copyright 2022 Morgussian
+*/
 import React, {useState} from 'react';
 import './Carousel.css'
 import leftArrow from '../../assets/images/Vectorleft.png'
 import rightArrow from '../../assets/images/Vectorright.png'
 
-
+//Le carousel prend en prop un array d'URL des images
 const Carousel = (props) => {
+
+    //UseState: La première image est à l'index 0
     const [currentImg, setCurrentImg] = useState(0)
     const carouselLength = props.pictures.length;
     
     //afficher un compteur de photos
     const displayImgNumber = () => {
-        let num1 = currentImg + 1
-        return num1 + '/' + carouselLength;  
+        let num = currentImg + 1
+        return num + '/' + carouselLength;  
     }
 
     //Si le carousel contient plus d'une photo:
@@ -50,10 +60,12 @@ const Carousel = (props) => {
             
             {props.pictures.map((picture, index) => {
                 return(
-                <div className = {index === currentImg ? 'active' : 'inactive'} key = {index}>
-                    {index === currentImg && (<img src = {picture} alt = "un appartement"></img>)}
-                     
-                </div>)
+
+                    //la class de la div change si l'image n'est pas active. Il faut une keyprop
+                    <div className = {index === currentImg ? 'active' : 'inactive'} key = {index}>
+                        {index === currentImg && (<img src = {picture} alt = "un appartement"></img>)}
+                        
+                    </div>)
             })}
             {isMoreThanOne()}
             {/* on peut mettre un array en props, pas un objet */}

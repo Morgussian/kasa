@@ -1,3 +1,12 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il renvoie au composant Router qui contient les paths du site
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 

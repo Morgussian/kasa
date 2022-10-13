@@ -1,3 +1,12 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient la logique d'affichage de la page d'erreur
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
 import '../../components/styles/index.css';
 import './404.css'

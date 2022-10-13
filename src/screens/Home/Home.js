@@ -1,4 +1,15 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il contient la logique d'affichage des thumbs des logements
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
+
+//imports des composants, feuilles de style et image de la bannière
 import Banner from '../../components/Banner/Banner';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';

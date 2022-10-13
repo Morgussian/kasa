@@ -1,3 +1,12 @@
+/**
+* Ce fichier fait partie du projet Kasa.
+*
+* Il renvoit vers App.js
+*
+* 
+* @copyright 2022 Morgussian
+*/
+
 import React from 'react';
 //nouveau react 18
 import {createRoot} from 'react-dom/client';
