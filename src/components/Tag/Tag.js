@@ -6,7 +6,7 @@ const Tag = (props) => {
         <div className='tagContainer'>
             <ul className='tags'>
                 {props.tags.map((tag, index) => (
-                    <li key={index} className = 'tag'> {tag} </li>
+                    <li key = {index} className = 'tag'> {tag} </li>
                 ))}
             </ul>
         </div>
