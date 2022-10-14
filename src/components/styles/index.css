@@ -1,13 +1,22 @@
+/* @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../../assets/Montserrat/static/Montserrat-Regular.ttf') format('ttf'), 
+       
+}; */
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Montserrat&display=swap');
+
+
 body {
   margin: auto;
-  font-family: 'Monserrat', 'Segoe UI', 'Roboto', 'Oxygen', -apple-system, BlinkMacSystemFont, 
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Monserrat', sans-serif; 
+  
  
 }
-/* utilisation de variables css: couleur */
+/* variables css: couleur taille de texte */
 :root {
   --primary-color: #FF6060;
   --text-background: #E5E5E5;
@@ -23,13 +32,6 @@ p{
   font-size: 24px;
   color: var(--primary-color);
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
 
 /*Comment changer la couleur des liens?*/
 :any-link {

@@ -15,7 +15,7 @@ import './Banner.css'
 const Banner = (props) => {
     
     return (
-        <div className='banner--container'>
+        <section className='banner--container'>
             <h1>{props.text}</h1>
 
             {/* Inline style pour l'image suivant affichage dans Home ou About */}
@@ -23,7 +23,7 @@ const Banner = (props) => {
                 borderRadius: 20
                 }} className = 'banner--img'>
             </div>
-        </div>
+        </section>
     );
 };
 

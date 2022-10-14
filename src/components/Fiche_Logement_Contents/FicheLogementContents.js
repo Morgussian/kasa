@@ -17,13 +17,19 @@ const FicheLogementContents = (props) => {
     const tags = props.tags   
        
     return (
-        <div className='crib_contents'>
-            <div className='left'>
+        <section className='crib_contents'>
+
+            {/* Partie gauche (en desktop) */}
+            <article className='left'>
                 <h1>{props.title}</h1>
                 <p>{props.location}</p>
+
+                {/* Tag est un composant */}
                 <Tag tags = {tags}/>
-            </div>
-            <div className='right'>
+            </article>
+
+            {/* Partie droite (en desktop) */}
+            <article className='right'>
                 <div className='host'>
                     <p className='hostName'>
                         {props.hostName}
@@ -34,13 +40,13 @@ const FicheLogementContents = (props) => {
                 </div>
                 <div className='rating'>
                     <div className='starsContainer'>
+                        {/* RatingStars est un composant */}
                         <RatingStars rating = {props.rating}/>
-                        {/* <span className="star">&#9733;</span> */}
                     </div>
                 </div>
-            </div>
+            </article>
             
-        </div>
+        </section>
     );
 };
 

@@ -7,9 +7,22 @@
 }
 
 .Err404 h1 {
+    
     font-size: 288px;
     margin-top: 80px;
     margin-bottom: -32px;
+    font-weight: 700;
+
+    
+
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    /* or 411px */
+
+    
 }
 
 .Err404 p {

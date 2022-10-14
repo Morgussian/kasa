@@ -20,13 +20,12 @@ import './fichelogement.css'
 import logements from '../../data/logements.json'
 
 //import de components
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
 import Carousel from '../../components/carousel/Carousel';
 import FicheLogementContents from '../../components/Fiche_Logement_Contents/FicheLogementContents';
 import Drawer from '../../components/Drawer/Drawer';
-import Err404 from '../404/Err404';
 
+//rediriger vers Err 404 si mauvais ID
+import { Navigate } from 'react-router-dom'
 
 const FicheLogement = () => {
 
@@ -47,7 +46,7 @@ const FicheLogement = () => {
         
     return (
         <section className='fiche_logement'>
-            <Header/>
+            
             <Carousel pictures= {cribFind.pictures}/>
             <FicheLogementContents title = {cribFind.title} location = {cribFind.location} hostName = {hostName} hostPicture = {hostPicture} rating = {cribFind.rating} tags = {cribFind.tags}/>
 
@@ -57,12 +56,12 @@ const FicheLogement = () => {
                 <Drawer title = 'Equipement' content = {cribFind.equipments} state = {true}/>
             </div>
             
-            <Footer/>
+            
         </section>
     )}
     
     //si cribFind false:
-    return <Err404/>;
+    return <Navigate to="*" />;
     
 };
 

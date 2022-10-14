@@ -10,13 +10,12 @@
 import React from 'react';
 
 //import des composants et de la feuille de style
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';
 import './About.css'
 import Drawer from '../../components/Drawer/Drawer';
 import aboutBannerImg from '../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash2.png'
 
+//Textes des quatre drawers
 const fiabilite = 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.'
 const respect = 'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'
 const service = 'Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N\'hésitez pas à nous contacter si vous avez la moindre question.'
@@ -26,7 +25,7 @@ const About = () => {
     return (
         
         <section className = 'about'>
-            <Header/>
+            
             <Banner img = {aboutBannerImg} />
             <div className = 'about--display'>
                 <Drawer title = 'Fiabilité' content = {fiabilite} state = {false}/>
@@ -34,7 +33,7 @@ const About = () => {
                 <Drawer title = 'Service' content = {service} state = {true}/>
                 <Drawer title = 'Sécurité' content = {securite} state = {false}/>
             </div>
-            <Footer/>
+            
         </section>
     );
 };

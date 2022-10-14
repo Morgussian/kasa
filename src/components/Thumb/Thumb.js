@@ -17,10 +17,10 @@ const Thumb = (props) => {
     
     return (
         <Link to = {`/Fiche_Logement/${props.id}`} className = 'thumb--link'>
-            <div className='thumb'>
+            <article className='thumb'>
                 <img src ={props.cover} alt='cover'></img>
                 <h3>{props.title}</h3>
-            </div>
+            </article>
         </Link>
     );
 };

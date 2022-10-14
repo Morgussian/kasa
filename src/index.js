@@ -15,13 +15,19 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import './components/styles/index.css';
 import App from './App';
 
+//Header et Footer ne font pas partie du Routing
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
 //nouveau react 18
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
   <Router>
+    <Header />
     <App />
+    <Footer />
   </Router>
 );
 

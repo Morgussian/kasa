@@ -32,15 +32,20 @@
 .active {
     position: absolute;
     bottom: -20px;
+    opacity: 1;
+    transition-duration: 500ms;
+    transform: scale(1.08);
 }
 .active img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-    
-    
-    
 }
+.inactive {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
 @media only screen and (max-width: 1280px){
     .carousel{
         margin-left: 20px;
