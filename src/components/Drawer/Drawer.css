@@ -20,6 +20,7 @@
 }
 .drawer--header img{
     cursor: pointer;
+    margin-top: 5px;
 }
 .drawer p, .drawer ul {
     position: relative;

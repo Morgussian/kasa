@@ -16,6 +16,7 @@ import './home.css'
 import homeBannerImg from '../../assets/images/background.png'
 
 const Home = () => {
+    document.title = 'Kasa - Accueil'
     return (
         <section className='home'>
             

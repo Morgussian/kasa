@@ -28,6 +28,7 @@ import Drawer from '../../components/Drawer/Drawer';
 import { Navigate } from 'react-router-dom'
 
 const FicheLogement = () => {
+    document.title = 'Kasa - Logement'
 
     //destructuration: une variable entre accolades ne donne que la valeur et pas l'objet {cid}  = clé + valeur
     const {cid} = useParams()

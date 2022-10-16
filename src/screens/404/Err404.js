@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 
 
 const Err404 = () => {
+    document.title = 'Kasa - Erreur'
     return (
             <section className='Err404'>
                 <h1>404</h1>
