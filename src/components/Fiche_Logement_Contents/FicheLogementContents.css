@@ -10,13 +10,13 @@
 }
 .left {
     position: relative;
-    
     text-align: left;
 }
 .left h1{
     font-size: 36px;
     color: var(--primary-color);
     margin: 0;
+    
 }
 .left p{
     margin: 0;
@@ -40,6 +40,8 @@
 }
 .right{
     position: relative;
+    top: -20px;
+    
 }
 .rating{
     position: absolute;

@@ -33,7 +33,7 @@
     position: absolute;
     bottom: -20px;
     opacity: 1;
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
     transform: scale(1.08);
 }
 .active img {
@@ -43,7 +43,7 @@
 }
 .inactive {
     opacity: 0;
-    transition-duration: 1s ease;
+    transition-duration: 1000ms ease;
 }
 
 @media only screen and (max-width: 1280px){

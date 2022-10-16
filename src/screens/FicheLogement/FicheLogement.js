@@ -28,7 +28,6 @@ import Drawer from '../../components/Drawer/Drawer';
 import { Navigate } from 'react-router-dom'
 
 const FicheLogement = () => {
-    document.title = 'Kasa - Logement'
 
     //destructuration: une variable entre accolades ne donne que la valeur et pas l'objet {cid}  = clé + valeur
     const {cid} = useParams()
@@ -37,9 +36,12 @@ const FicheLogement = () => {
     const cribFind = logements.find((crib) => 
         crib.id === cid
     );
-
+    
     //cribFind est un booléen: L'ID de l'URL est il contenu dans logements?
     if( cribFind ){
+
+    //attendre d'avoir la constante cribFind pour le nom de la page 
+    document.title = 'Kasa - ' + cribFind.title
 
     //Décomposer l'objet host. un objet ne peut pas être passé en prop...
     const hostName = cribFind.host.name
@@ -62,7 +64,8 @@ const FicheLogement = () => {
     )}
     
     //si cribFind false:
-    return <Navigate to="*" />;
+    return <Navigate to = '*' />
+        
     
 };
 

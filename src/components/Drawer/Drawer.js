@@ -24,7 +24,7 @@ const Drawer = (props) => {
     //le contenu est-il un array?
     const isAnArray = Array.isArray(content)
     
-    //faire une map si content est un array
+    //faire une map si content est un array (équipements)
     const drawerContentDisplay = () => {
         if (isAnArray){
 

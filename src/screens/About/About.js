@@ -20,12 +20,11 @@ import AboutFacts from '../../data/about_facts.json'
 
 const About = () => {
     document.title = 'Kasa - A propos'
-    let screenTitle = document.head.getElementsByTagName('title');
-    screenTitle.innerText = 'A propos'
+    
     //les drawers sont mappés, affichés fermés par défaut (state false)
     const AboutDrawerList = AboutFacts.map((fact) => 
         <li key={fact.title}>
-            <Drawer title = {fact.title} content = {fact.content} state = {false}/>
+            <Drawer title = {fact.title} content = {fact.content} state = {true}/>
         </li>  
     )
     return (

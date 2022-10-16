@@ -34,11 +34,11 @@ const RatingStars = (props) => {
         return starArray
     }
     return (
-        <div className="container">
+        
             <div className="stars">
                 { displayStars() }
             </div>
-        </div>
+        
     );
 }
 
