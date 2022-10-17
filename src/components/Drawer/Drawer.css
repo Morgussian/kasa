@@ -6,6 +6,7 @@
     margin-top: 0;
 }
 .drawer--header{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,8 +20,10 @@
     font-size: var(--text-size);
 }
 .drawer--header img{
+    position: absolute;
     cursor: pointer;
-    margin-top: 5px;
+    bottom: 18px;
+    right: 2.5%;
 }
 .drawer p, .drawer ul {
     position: relative;
@@ -46,6 +49,7 @@
     .drawer--header img {
         width: 12px;
         height: auto;
-        margin-bottom: 3px;
+        bottom: 11px;
+        
     }
 }

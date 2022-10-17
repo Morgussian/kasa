@@ -23,8 +23,9 @@ const About = () => {
     
     //les drawers sont mappés, affichés fermés par défaut (state false)
     const AboutDrawerList = AboutFacts.map((fact) => 
+        
         <li key={fact.title}>
-            <Drawer title = {fact.title} content = {fact.content} state = {true}/>
+            <Drawer title = {fact.title} content = {fact.content} state = {fact.state}/>
         </li>  
     )
     return (

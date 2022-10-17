@@ -25,9 +25,6 @@
     color: white;
     margin: auto;
     bottom: -140px;
-
-    /* border: 1px black solid; */
-    
 }
 .active {
     position: absolute;

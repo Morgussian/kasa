@@ -20,12 +20,10 @@ li{
   color: var(--primary-color);
 }
 p{
+  
   font-size: 24px;
   color: var(--primary-color);
 }
 
-/*Comment changer la couleur des liens?*/
-:any-link {
-  --color: #FF6060;
-}
+
 

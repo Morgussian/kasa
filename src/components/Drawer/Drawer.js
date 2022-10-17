@@ -18,7 +18,7 @@ import ArrowDown from '../../assets/images/arrow_down.png'
 const Drawer = (props) => {
     const content = props.content
 
-    //state: déclarer une constante qui est un array. une prop d'état à useState qui, suivant les pages, peut être ouvert...
+    //state: déclarer une constante qui est un array. une prop d'état à useState. isoPen est un booléen.
     const [isOpen, setIsOpen] = useState(props.state)
 
     //le contenu est-il un array?
