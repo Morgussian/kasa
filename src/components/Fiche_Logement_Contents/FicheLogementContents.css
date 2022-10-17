@@ -4,6 +4,7 @@
     max-width: var(--body-width);
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .left, .right {
     flex: 1;
@@ -19,6 +20,7 @@
     
 }
 .left p{
+    font-size: var(--text-size);
     margin: 0;
 }
 .host{
@@ -57,6 +59,7 @@
 @media only screen and (max-width: 768px){
     .crib_contents{
         flex-direction: column;
+        margin-bottom: -10px;
     }
     .right{
         display: flex;
@@ -71,6 +74,10 @@
 
 }
 @media only screen and (max-width: 440px){
+    .crib_contents{
+        margin-bottom: -20px;
+        /* border: 1px solid black; */
+    }
     .left h1{
         font-size: 18px;
     }
