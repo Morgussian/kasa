@@ -56,7 +56,7 @@ const Carousel = (props) => {
     if(!Array.isArray(props.pictures) || carouselLength === 0)
         return null
     return (
-        <section className='carousel'>
+        <div className='carousel'>
             
             {props.pictures.map((picture, index) => {
                 return(
@@ -69,7 +69,7 @@ const Carousel = (props) => {
             })}
             {isMoreThanOne()}
             {/* on peut mettre un array en props, pas un objet */}
-        </section>
+        </div>
     );
 };
 

@@ -27,11 +27,11 @@ const ThumbContainer = () => {
         </li>
     )
     return (
-        <section className='thumbContainer'>
+        <div className='thumbContainer'>
             <ul>
                 {titleList}
             </ul>
-        </section>
+        </div>
     );
     
 };
