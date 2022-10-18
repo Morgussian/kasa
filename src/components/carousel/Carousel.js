@@ -63,6 +63,8 @@ const Carousel = (props) => {
 
                     //la class de la div change si l'image n'est pas active. Il faut une keyprop
                     <div className = {index === currentImg ? 'active' : 'inactive'} key = {index}>
+
+                        {/* entre accolades && signifie que l'élément en jsx sera display uniquement si la condition d'avant est true */}
                         {index === currentImg && (<img src = {picture} alt = "un appartement"></img>)}
                         
                     </div>)

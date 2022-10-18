@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Montserrat&display=swap');
 
+.font-link{
+  font-family: 'Monserrat', sans-serif; 
+}
 
 body {
   margin: auto;

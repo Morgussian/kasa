@@ -55,8 +55,8 @@ const FicheLogement = () => {
 
             {/* cette div permettra de gérer la disposition des drawers sur la page */}
             <div className='drawerContainer'>
-                <Drawer title = 'Description' content = {cribFind.description} state = {true}/>
-                <Drawer title = 'Equipement' content = {cribFind.equipments} state = {true}/>
+                <Drawer title = 'Description' content = {cribFind.description} state = {false}/>
+                <Drawer title = 'Equipement' content = {cribFind.equipments} state = {false}/>
             </div>
             
             

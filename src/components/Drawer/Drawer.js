@@ -14,7 +14,7 @@ import './Drawer.css';
 import ArrowUp from '../../assets/images/arrow_up.png'
 import ArrowDown from '../../assets/images/arrow_down.png'
 
-//Drawer (Collapse?) prend trois props: title de la barre, content et isOpen
+//Drawer (Collapse?) prend trois props: title de la barre, content et state
 const Drawer = (props) => {
     const content = props.content
 
@@ -34,7 +34,7 @@ const Drawer = (props) => {
                     <li key={index} className = 'item'>
                         {item}
                     </li>
-                )}
+                    )}
                 </ul>
             )
         }

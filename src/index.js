@@ -10,7 +10,7 @@
 import React from 'react';
 //nouveau react 18
 import {createRoot} from 'react-dom/client';
-
+import './assets/Montserrat/static/Montserrat-Regular.ttf'
 import {BrowserRouter as Router} from 'react-router-dom';
 import './components/styles/index.css';
 import App from './App';
